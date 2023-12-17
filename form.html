@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="Автор" content="Julia">
+        <title>HTML</title>
+
+        <link rel="stylesheet" href="style.css">
+                    
+    </head>
+
+    <body>
+
+        
+        <form method="Post">
+
+            <div class="block">Заполните резюме</div>
+
+            <fieldset class="item">
+                <legend class="item1">Общая информация</legend>
+                <div class="field">
+                 ФИО<br>
+                 <input required type="text" name="firstname" minlength="2" maxlength="10" placeholder="Иванов Иван Иванович">
+                </div>
+                <div class="field" id="col1">
+                 Дата рождения<br>
+                 <input required type="date" name="birthday">
+                </div>
+                <div class="field">
+                 Пол<br>
+                 <input type="radio" name="gender"> - Мужской<br>
+                 <input type="radio" name="gender"> - Женский<br>
+                 <input type="radio" name="gender"> - Другой<br>
+                </div>
+                <div class="field">
+                 Фото<br>
+                 <input type="file" name="photo">
+                </div>
+            </fieldset>
+
+            <fieldset class="item">
+                <legend class="item1">Контактная информация</legend>
+                <div class="field">
+                 Телефон<br>
+                 <input required type="tel" name="telephone" placeholder="+37526958745">
+                </div>
+                <div class="field" id="col2">
+                 Электронная почта<br>
+                 <input required type="email" name="email" placeholder="name.@gmail.com">
+                </div>
+                <div class="field">
+                 Образование<br>
+                    <select name="studies{}">
+                        <option disabled>Ваше Образование</option>
+                        <option>Высшее</option>
+                        <option>Средне-специальное</option>
+                        <option>Среднее</option>
+                    </select>
+                </div>
+                <div class="field">
+                 Высшее<br>
+                    <select name="studies{}">
+                        <option>Ваше Образование</option>
+                        <option>БГУ</option>
+                        <option selected>БГЭУ</option>
+                        <option>МИИ</option>
+                        <option>МИТСО</option>
+                        <option>БИП</option>
+                    </select>
+                </div>
+                <div class="field">
+                 Курсы<br>
+                 <input type="text" name="courses" placeholder="Курсы повышения квалификации">
+                </div>
+            </fieldset>
+
+            <fieldset class="item">
+                <legend class="item1">Информационная часть</legend>
+                <div class="field">
+                  Карьера<br>
+                 <input type="text" name="career" placeholder="Музыкант">
+                </div>
+                <div class="field" id="col3">
+                  Место работы 1<br>
+                  <input type="text" name="placeofwork1" placeholder="Минский парниково-тепличный комбинат">
+                </div>
+                <div class="field">
+                  Дата начала и дата окончания работы 1<br>
+                  <input type="date" name="startdate1">
+                  <input type="date" name="expirationdate1">
+                </div>
+                <div class="field">
+                  Место работы 2<br>
+                  <input type="text" name="placeofwork2" placeholder="Минск Кристалл Трейд">
+                </div>
+                <div class="field">
+                  Дата начала и дата окончания работы 2<br>
+                  <input type="date" name="startdate2">
+                  <input type="date" name="expirationdate2">
+                </div>
+            </fieldset>
+
+            <div class="field">
+                <input required type="checkbox" name="confirm"> - Я согласен получать рассылку рекламы.
+            </div>
+
+            <div class="field">
+                Оцените работу сайта<br>
+                <input disabled min="1" max="10" type="range" name="range">
+            </div>
+            <div class="field">
+                О себе<br>
+               <textarea name="massage" placeholder="Напишите что-нибудь......."></textarea>
+            </div>
+            
+    
+            <button class="send">Отправить</button>
+            <button type="reset">Сбросить</button>
+
+
+            
+        </form>
+                   
+    </body>
+</html>
